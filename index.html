@@ -20,11 +20,11 @@
 /* ===== CSS Reset & Base ===== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{overflow-x:hidden}
-html{scroll-behavior:smooth;font-family:"Noto Serif CJK SC","Source Han Serif SC","思源宋体",Georgia,"Times New Roman",serif;font-size:18px;line-height:2.05;color:#4c4c4c}
+html{scroll-behavior:smooth;font-family:“Noto Serif CJK SC”,“Source Han Serif SC”,“思源宋体”,Georgia,“Times New Roman”,serif;font-size:18px;line-height:2.05;color:#4c4c4c}
 
 /* Desktop background — fixed pseudo-element avoids expensive background-attachment:fixed repaints */
 body{min-height:100vh;position:relative;background:#e8e6e0}
-body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background:url("/images/img_4025_small.jpg") no-repeat center center;background-size:cover;z-index:-10;pointer-events:none;will-change:transform}
+body::before{content:“”;position:fixed;top:0;left:0;width:100%;height:100%;background:url(“/images/img_4025_small.jpg”) no-repeat center center;background-size:cover;z-index:-10;pointer-events:none;will-change:transform}
 .page-overlay{position:fixed;inset:0;background:rgba(255,255,255,0.5);z-index:0;pointer-events:none}
 a{color:#7C8CDE;text-decoration:none;transition:color .3s}
 a:hover{color:#5a6dbf}
@@ -54,14 +54,14 @@ nav a:hover,nav a.active{border-bottom-color:#7C8CDE;color:#7C8CDE}
 
 /* ===== Section Dividers ===== */
 .section-divider{position:relative;padding:30px 0;background-size:cover;background-position:center;z-index:1;transform:translateZ(0)}
-.section-divider::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.18);z-index:0}
+.section-divider::before{content:“”;position:absolute;inset:0;background:rgba(0,0,0,0.18);z-index:0}
 .section-divider h2{position:relative;z-index:1;font-size:2.4rem;font-weight:700;color:#fff;letter-spacing:.08em;margin-bottom:.3rem;line-height:1.3}
 .title-container{max-width:1100px;margin:0 auto;padding:0 1.5rem;text-align:left;position:relative;z-index:1}
-#part1{background-image:url("/images/gemini_generated_image_1_small.jpg")}
-#part2{background-image:url("/images/gemini_generated_image_2_small.jpg")}
-#part3{background-image:url("/images/gemini_generated_image_3_small.jpg")}
-#part4{background-image:url("/images/gemini_generated_image_4_small.jpg")}
-#part5{background-image:url("/images/gemini_generated_image_5_small.jpg")}
+#part1{background-image:url(“/images/gemini_generated_image_1_small.jpg”)}
+#part2{background-image:url(“/images/gemini_generated_image_2_small.jpg”)}
+#part3{background-image:url(“/images/gemini_generated_image_3_small.jpg”)}
+#part4{background-image:url(“/images/gemini_generated_image_4_small.jpg”)}
+#part5{background-image:url(“/images/gemini_generated_image_5_small.jpg”)}
 
 /* ===== Reveal Animations ===== */
 .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
@@ -71,7 +71,7 @@ nav a:hover,nav a.active{border-bottom-color:#7C8CDE;color:#7C8CDE}
 .section{padding:3.5rem 0}
 .section-header{margin-bottom:2rem;border-left:4px solid #7C8CDE;padding-left:1.25rem}
 .section-number{font-size:.85rem;color:#7C8CDE;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem}
-.section-number::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:#7C8CDE;flex-shrink:0}
+.section-number::before{content:“”;display:inline-block;width:10px;height:10px;border-radius:50%;background:#7C8CDE;flex-shrink:0}
 .section-header h2{font-size:1.5rem;font-weight:700;color:#333;margin-bottom:.3rem}
 .section-header .section-subtitle{font-size:1rem;color:#7C8CDE;font-weight:600}
 .section-body{font-size:1rem;line-height:2.1;color:#4c4c4c;text-align:center}
@@ -118,11 +118,11 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
   /* Kill fixed background — too expensive on mobile */
   body::before{display:none}
   body{background:none!important}
-  body::after{content:"";position:fixed!important;top:0;left:0;width:100vw;height:100vh;background:url("/images/img_4025_mobile.jpg") no-repeat center center!important;background-size:cover!important;z-index:-10!important;pointer-events:none}
+  body::after{content:“”;position:fixed!important;top:0;left:0;width:100vw;height:100vh;background:url(“/images/img_4025_mobile.jpg”) no-repeat center center!important;background-size:cover!important;z-index:-10!important;pointer-events:none}
   .section-divider{background-size:cover!important;background-position:center center!important}
 
   /* System font stack — avoids downloading CJK fonts on mobile */
-  html{font-size:16px;font-variant-numeric:tabular-nums;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important}
+  html{font-size:16px;font-variant-numeric:tabular-nums;font-family:-apple-system,BlinkMacSystemFont,“Segoe UI”,Roboto,“Helvetica Neue”,Arial,sans-serif!important}
 
   .hero-container{padding-top:100px;padding-bottom:8vh}
   .hero .inner{margin-left:5vw!important;margin-right:5vw!important}
@@ -137,15 +137,15 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
   nav{-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 
   .section-body strong{font-size:1.1rem}
-  .section-body strong[style*="font-size:1.35rem"]{font-size:1.15625rem!important}
-  .flex-text strong[style*="font-size:1.5rem"]{font-size:1.3125rem!important}
-  .flex-text strong[style*="font-size:1.35rem"]{font-size:1.15625rem!important}
-  .flex-text strong[style*="font-size"]{font-size:1.1rem!important}
-  .conclusion strong[style*="font-size:1.35rem"]{font-size:1.15625rem!important}
-  .conclusion strong[style*="font-size:1.2rem"]{font-size:1.125rem!important}
-  .conclusion strong[style*="font-size"]{font-size:1.1rem!important}
-  p[style*="font-size:1.5rem"][style*="font-weight:700"]{font-size:1.3125rem!important}
-  p[style*="font-size:1.35rem"][style*="font-weight:700"]{font-size:1.15625rem!important}
+  .section-body strong[style*=”font-size:1.35rem”]{font-size:1.15625rem!important}
+  .flex-text strong[style*=”font-size:1.5rem”]{font-size:1.3125rem!important}
+  .flex-text strong[style*=”font-size:1.35rem”]{font-size:1.15625rem!important}
+  .flex-text strong[style*=”font-size”]{font-size:1.1rem!important}
+  .conclusion strong[style*=”font-size:1.35rem”]{font-size:1.15625rem!important}
+  .conclusion strong[style*=”font-size:1.2rem”]{font-size:1.125rem!important}
+  .conclusion strong[style*=”font-size”]{font-size:1.1rem!important}
+  p[style*=”font-size:1.5rem”][style*=”font-weight:700”]{font-size:1.3125rem!important}
+  p[style*=”font-size:1.35rem”][style*=”font-weight:700”]{font-size:1.15625rem!important}
 
   /* Stack layouts vertically */
   .chart-wrapper.side-by-side{flex-direction:column}
@@ -158,7 +158,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
   .section-header .section-subtitle{font-size:.85rem}
 
   /* Full-width on mobile */
-  div[style*="max-width:70%"],div[style*="max-width:80%"]{max-width:100%!important}
+  div[style*=”max-width:70%”],div[style*=”max-width:80%”]{max-width:100%!important}
   .flex-layout{align-items:stretch!important}
   .flex-layout .flex-chart,.flex-layout .flex-text{width:100%!important}
   #sec03 .flex-chart .chart-wide,#sec09 .flex-chart .chart-wide,#sec10 .flex-chart .chart-wide,#sec11 .flex-chart .chart-wide,#sec12 .flex-chart .chart-wide{margin:0!important}
@@ -270,7 +270,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             <p class="chart-hint" style="margin-bottom:1.2rem">该图为ChatGPT-Image2绘制</p>
             <p>漫长的潜伏期，</p>
             <p>正是疫苗与筛查发挥作用的窗口。</p>
-            <p>但这漫长的"无声"正是<strong>最致命的伪装</strong>。</p>
+            <p>但这漫长的”无声”正是<strong>最致命的伪装</strong>。</p>
             <p>病毒在人们毫无察觉的接触中悄然接力，</p>
             <p>织就了一张隐秘的感染暗网。</p>
         </div>
@@ -382,7 +382,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             <p class="section-subtitle">WHO提出90-70-90目标，中国18个省级行政区试点后，全国13岁女孩免费接种</p>
         </div>
         <div class="section-body reveal">
-            <p>面对日益严峻的疾病负担，WHO在2020年提出消除宫颈癌"90-70-90"目标：</p>
+            <p>面对日益严峻的疾病负担，WHO在2020年提出消除宫颈癌”90-70-90”目标：</p>
             <p><strong>90%</strong>的女孩<strong>15岁</strong>前完成接种，<strong>70%</strong>的女性接受高效筛查，<strong>90%</strong>的患者获得治疗。</p>
         </div>
         <div class="chart-wide reveal">
@@ -448,7 +448,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             <p>但真实的接种率却仅有<strong>19.0%</strong>。</p>
             <p>如果是接种点分布问题，落差本不该如此巨大。</p>
             <p>在地图上检索大学城周边的接种网点，</p>
-            <p>你会看到一个个代表着"可及性"的坐标。</p>
+            <p>你会看到一个个代表着”可及性”的坐标。</p>
             <p><strong>从物理空间来看，接种中心似乎并不稀缺。</strong></p>
         <div class="map-container reveal">
             <iframe data-src="/hpv-vaccine-data-news/map.html" data-is-map="true" style="width:100%;height:600px;border:none;border-radius:8px;" sandbox="allow-scripts allow-same-origin" title="大学城周边HPV接种点地图"></iframe>
@@ -470,7 +470,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
                 <p><strong>价格和供应不足</strong>，</p>
                 <p>也包括<strong>信息的不透明与难获取</strong>。</p>
                 <p>一项研究中，超<strong>六成</strong>的女大学生表示</p>
-                <p><strong style="color:#5A6ABF">"获取接种信息困难"</strong>。</p>
+                <p><strong style="color:#5A6ABF">“获取接种信息困难”</strong>。</p>
                 <p>她们的接种之路</p>
                 <p>从一开始就卡在了起步阶段，</p>
                 <p>信息的壁垒正在</p>
@@ -609,11 +609,11 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
                 <p>它需要更直观的图表，或是更容易消化的外壳。</p>
                 <p><strong style="font-size:1.2rem">信息的形式，本身就是信息的内容。</strong></p>
                 <p>在所有的科普形式中，</p>
-                <p>带有温度的<strong style="font-size:1.2rem;color:#5A6ABF">"真实经历"</strong>排在首位。</p>
+                <p>带有温度的<strong style="font-size:1.2rem;color:#5A6ABF">“真实经历”</strong>排在首位。</p>
             <p><strong style="font-size:1.2rem">85.3%</strong>的人给出了积极评价，</p>
             <p>近一半直接打了满分，</p>
-            <p><strong style="font-size:1.15rem">"医学科普"</strong>也获得了<strong>75.5%</strong>的认可。</p>
-            <p><strong style="font-size:1.15rem">"数据说明"</strong>不仅垫底，</p>
+            <p><strong style="font-size:1.15rem">“医学科普”</strong>也获得了<strong>75.5%</strong>的认可。</p>
+            <p><strong style="font-size:1.15rem">“数据说明”</strong>不仅垫底，</p>
             <p>还遭到了<strong>15%</strong>受访者的明确排斥，</p>
             <p>大家对它的看法也最为分化。</p>
                 <p><strong style="font-size:1.2rem">为什么？</strong></p>
@@ -694,7 +694,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
         </div>
         <div class="section-body reveal">
             <p>校园作为与学生最息息相关的生活场所，应该构建起</p>
-            <p><strong>"接种HPV疫苗是符合健康主流、被同龄群体推崇"</strong></p>
+            <p><strong>“接种HPV疫苗是符合健康主流、被同龄群体推崇”</strong></p>
             <p>的<strong>包容性同辈文化</strong>。</p>
             <p>校医院可以提供预约流程和专业答疑，</p>
             <p>辅导员、学生会与社团可以组织真实经历分享，</p>
@@ -774,27 +774,27 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
 
 <script>
 (function(){
-  'use strict';
+  ‘use strict’;
 
   var isMobile=/(Android|iPhone|iPad|iPod|BlackBerry|Windows Phone)/i.test(navigator.userAgent);
-  if(isMobile&&typeof navigator.connection!=='undefined'){
+  if(isMobile&&typeof navigator.connection!==’undefined’){
     var conn=navigator.connection;
-    if(conn.effectiveType==='slow-2g'||conn.effectiveType==='2g'){
-      window.location.href='/hpv-vaccine-data-news/simple.html';
+    if(conn.effectiveType===’slow-2g’||conn.effectiveType===’2g’){
+      window.location.href=’/hpv-vaccine-data-news/simple.html’;
       return;
     }
   }
 
   function hideLoading() {
-    var overlay = document.getElementById('loading-overlay');
+    var overlay = document.getElementById(‘loading-overlay’);
     if (!overlay) return;
-    overlay.style.opacity = '0';
+    overlay.style.opacity = ‘0’;
     setTimeout(function() {
-      if (overlay.parentNode) overlay.style.display = 'none';
+      if (overlay.parentNode) overlay.style.display = ‘none’;
     }, 500);
   }
 
-  window.addEventListener('load', function() {
+  window.addEventListener(‘load’, function() {
     setTimeout(hideLoading, 1000);
     setTimeout(hideLoading, 4000);
 
@@ -802,29 +802,29 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
       entries.forEach(function(entry) {
         if (!entry.isIntersecting) return;
         var iframe = entry.target;
-        var src = iframe.getAttribute('data-src');
+        var src = iframe.getAttribute(‘data-src’);
         if (!src) return;
 
         iframe.src = src;
-        iframe.removeAttribute('data-src');
+        iframe.removeAttribute(‘data-src’);
 
-        var placeholder = iframe.parentNode.querySelector('.chart-placeholder');
+        var placeholder = iframe.parentNode.querySelector(‘.chart-placeholder’);
         if (placeholder) placeholder.remove();
 
-        var spinner = document.createElement('div');
-        spinner.className = 'chart-spinner';
+        var spinner = document.createElement(‘div’);
+        spinner.className = ‘chart-spinner’;
         iframe.parentNode.appendChild(spinner);
 
-        iframe.onload = function() { spinner.style.display = 'none'; };
+        iframe.onload = function() { spinner.style.display = ‘none’; };
         iframe.onerror = function() {
-          spinner.style.display = 'none';
-          var container = iframe.closest('.chart-wide') || iframe.closest('.chart-frame');
+          spinner.style.display = ‘none’;
+          var container = iframe.closest(‘.chart-wide’) || iframe.closest(‘.chart-frame’);
           if (container) {
-            container.classList.add('iframe-error');
-            var hint = container.querySelector('.chart-hint');
-            if (hint && !hint.textContent.includes('失败')) {
-              hint.textContent = '图表加载失败，建议刷新重试';
-              hint.style.color = '#e74c3c';
+            container.classList.add(‘iframe-error’);
+            var hint = container.querySelector(‘.chart-hint’);
+            if (hint && !hint.textContent.includes(‘失败’)) {
+              hint.textContent = ‘图表加载失败，建议刷新重试’;
+              hint.style.color = ‘#e74c3c’;
             }
           }
         };
@@ -832,8 +832,8 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
         setTimeout(function() {
           try {
             if (iframe.contentWindow && iframe.contentWindow.document &&
-                iframe.contentWindow.document.body && iframe.contentWindow.document.body.innerHTML !== '') {
-              spinner.style.display = 'none';
+                iframe.contentWindow.document.body && iframe.contentWindow.document.body.innerHTML !== ‘’) {
+              spinner.style.display = ‘none’;
             }
           } catch(e) { /* cross-origin, ignore */ }
         }, 8000);
@@ -841,36 +841,36 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
         iframeObserver.unobserve(iframe);
       });
     }, {
-      rootMargin: '300px 0px',
+      rootMargin: ‘300px 0px’,
       threshold: 0.01
     });
 
-    document.querySelectorAll('iframe[data-src]').forEach(function(iframe) {
+    document.querySelectorAll(‘iframe[data-src]’).forEach(function(iframe) {
       iframeObserver.observe(iframe);
     });
 
     var revealObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add(‘visible’);
           revealObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12 });
 
-    document.querySelectorAll('.section,.title-container,.chart-wide,.chart-wrapper,.flex-layout,.map-container,.section-header,.section-body,.conclusion').forEach(function(el) {
-      el.classList.add('reveal');
+    document.querySelectorAll(‘.section,.title-container,.chart-wide,.chart-wrapper,.flex-layout,.map-container,.section-header,.section-body,.conclusion’).forEach(function(el) {
+      el.classList.add(‘reveal’);
       revealObserver.observe(el);
     });
 
     var ticking = false;
-    var navLinks = document.querySelectorAll('nav a');
+    var navLinks = document.querySelectorAll(‘nav a’);
 
     function updateNav() {
       var scrollY = window.pageYOffset + 150;
-      var currentId = '';
+      var currentId = ‘’;
       navLinks.forEach(function(link) {
-        var target = document.querySelector(link.getAttribute('href'));
+        var target = document.querySelector(link.getAttribute(‘href’));
         if (target && target.offsetTop <= scrollY) {
           currentId = target.getAttribute('id');
         }
