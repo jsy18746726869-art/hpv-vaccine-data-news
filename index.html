@@ -14,7 +14,7 @@
 <link rel="dns-prefetch" href="https://dycharts.com">
 
 <!-- Preload critical hero background image -->
-<link rel="preload" as="image" href="IMG_4025_small.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/img_4025_small.jpg" fetchpriority="high">
 
 <style>
 /* ===== CSS Reset & Base ===== */
@@ -24,7 +24,7 @@ html{scroll-behavior:smooth;font-family:"Noto Serif CJK SC","Source Han Serif SC
 
 /* Desktop background — fixed pseudo-element avoids expensive background-attachment:fixed repaints */
 body{min-height:100vh;position:relative;background:#e8e6e0}
-body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background:url("IMG_4025_small.jpg") no-repeat center center;background-size:cover;z-index:-10;pointer-events:none;will-change:transform}
+body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background:url("/images/img_4025_small.jpg") no-repeat center center;background-size:cover;z-index:-10;pointer-events:none;will-change:transform}
 .page-overlay{position:fixed;inset:0;background:rgba(255,255,255,0.5);z-index:0;pointer-events:none}
 a{color:#7C8CDE;text-decoration:none;transition:color .3s}
 a:hover{color:#5a6dbf}
@@ -57,11 +57,11 @@ nav a:hover,nav a.active{border-bottom-color:#7C8CDE;color:#7C8CDE}
 .section-divider::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.18);z-index:0}
 .section-divider h2{position:relative;z-index:1;font-size:2.4rem;font-weight:700;color:#fff;letter-spacing:.08em;margin-bottom:.3rem;line-height:1.3}
 .title-container{max-width:1100px;margin:0 auto;padding:0 1.5rem;text-align:left;position:relative;z-index:1}
-#part1{background-image:url("Gemini_Generated_Image_1_small.jpg")}
-#part2{background-image:url("Gemini_Generated_Image_2_small.jpg")}
-#part3{background-image:url("Gemini_Generated_Image_3_small.jpg")}
-#part4{background-image:url("Gemini_Generated_Image_4_small.jpg")}
-#part5{background-image:url("Gemini_Generated_Image_5_small.jpg")}
+#part1{background-image:url("/images/gemini_generated_image_1_small.jpg")}
+#part2{background-image:url("/images/gemini_generated_image_2_small.jpg")}
+#part3{background-image:url("/images/gemini_generated_image_3_small.jpg")}
+#part4{background-image:url("/images/gemini_generated_image_4_small.jpg")}
+#part5{background-image:url("/images/gemini_generated_image_5_small.jpg")}
 
 /* ===== Reveal Animations ===== */
 .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
@@ -118,7 +118,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
   /* Kill fixed background — too expensive on mobile */
   body::before{display:none}
   body{background:none!important}
-  body::after{content:"";position:fixed!important;top:0;left:0;width:100vw;height:100vh;background:url("IMG_4025_mobile.jpg") no-repeat center center!important;background-size:cover!important;z-index:-10!important;pointer-events:none}
+  body::after{content:"";position:fixed!important;top:0;left:0;width:100vw;height:100vh;background:url("/images/img_4025_mobile.jpg") no-repeat center center!important;background-size:cover!important;z-index:-10!important;pointer-events:none}
   .section-divider{background-size:cover!important;background-position:center center!important}
 
   /* System font stack — avoids downloading CJK fonts on mobile */
@@ -265,7 +265,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             <p>唯有<strong>持续性感染</strong>才会沿着病变一路发展为<strong>宫颈癌</strong>。</p>
             <p>这一过程往往长达<strong>十年以上</strong>。</p>
             <div style="max-width:80%;margin:1.5rem auto;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08)">
-                <img src="chatgpt_hpv_small.jpg" alt="HPV感染自然史示意" loading="lazy" style="width:100%;height:auto;display:block">
+                <img src="/images/chatgpt_hpv_small.jpg" alt="HPV感染自然史示意" loading="lazy" style="width:100%;height:auto;display:block">
             </div>
             <p class="chart-hint" style="margin-bottom:1.2rem">该图为ChatGPT-Image2绘制</p>
             <p>漫长的潜伏期，</p>
@@ -305,7 +305,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             </div>
             <div class="flex-chart">
                 <div class="chart-wide reveal" style="margin:3rem 0">
-                    <img src="young_face_small.jpg" alt="年轻女性HPV感染率" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08)">
+                    <img src="/images/young_face_small.jpg" alt="年轻女性HPV感染率" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08)">
                 </div>
             </div>
         </div>
@@ -386,10 +386,10 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             <p><strong>90%</strong>的女孩<strong>15岁</strong>前完成接种，<strong>70%</strong>的女性接受高效筛查，<strong>90%</strong>的患者获得治疗。</p>
         </div>
         <div class="chart-wide reveal">
-            <img src="hpv_history_small.jpg" alt="HPV疫苗发展历程" loading="lazy" style="width:100%;height:auto;display:block">
+            <img src="/images/hpv_history_small.jpg" alt="HPV疫苗发展历程" loading="lazy" style="width:100%;height:auto;display:block">
         </div>
         <div class="chart-wide reveal">
-            <img src="policy_timeline_small.jpg" alt="中国各省市 HPV 疫苗普惠接种政策时间演进表" loading="lazy" style="width:100%;height:auto;display:block">
+            <img src="/images/policy_timeline_small.jpg" alt="中国各省市 HPV 疫苗普惠接种政策时间演进表" loading="lazy" style="width:100%;height:auto;display:block">
         </div>
         <div class="section-body reveal">
             <p>为了响应号召攻克疾病负担，中国从地方试点起步，</p>
@@ -451,7 +451,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
             <p>你会看到一个个代表着"可及性"的坐标。</p>
             <p><strong>从物理空间来看，接种中心似乎并不稀缺。</strong></p>
         <div class="map-container reveal">
-            <iframe data-src="map.html" data-is-map="true" style="width:100%;height:600px;border:none;border-radius:8px;" sandbox="allow-scripts allow-same-origin" title="大学城周边HPV接种点地图"></iframe>
+            <iframe data-src="/hpv-vaccine-data-news/map.html" data-is-map="true" style="width:100%;height:600px;border:none;border-radius:8px;" sandbox="allow-scripts allow-same-origin" title="大学城周边HPV接种点地图"></iframe>
         </div>
         </div>
         <div class="section-body reveal">
@@ -503,7 +503,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
                 </div>
                 <div class="flex-chart">
                     <div class="chart-wide reveal" style="margin:3.5rem 0">
-                        <img src="algorithm_mist_small.jpg" alt="社交媒体HPV疫苗内容分析" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08)">
+                        <img src="/images/algorithm_mist_small.jpg" alt="社交媒体HPV疫苗内容分析" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08)">
                     </div>
                 </div>
             </div>
@@ -780,7 +780,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
   if(isMobile&&typeof navigator.connection!=='undefined'){
     var conn=navigator.connection;
     if(conn.effectiveType==='slow-2g'||conn.effectiveType==='2g'){
-      window.location.href='simple.html';
+      window.location.href='/hpv-vaccine-data-news/simple.html';
       return;
     }
   }
@@ -794,67 +794,61 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
     }, 500);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(hideLoading, 1000);
-    });
-  } else {
+  window.addEventListener('load', function() {
     setTimeout(hideLoading, 1000);
-  }
-  setTimeout(hideLoading, 4000);
+    setTimeout(hideLoading, 4000);
 
-  var iframeObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (!entry.isIntersecting) return;
-      var iframe = entry.target;
-      var src = iframe.getAttribute('data-src');
-      if (!src) return;
+    var iframeObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        var iframe = entry.target;
+        var src = iframe.getAttribute('data-src');
+        if (!src) return;
 
-      iframe.src = src;
-      iframe.removeAttribute('data-src');
+        iframe.src = src;
+        iframe.removeAttribute('data-src');
 
-      var placeholder = iframe.parentNode.querySelector('.chart-placeholder');
-      if (placeholder) placeholder.remove();
+        var placeholder = iframe.parentNode.querySelector('.chart-placeholder');
+        if (placeholder) placeholder.remove();
 
-      var spinner = document.createElement('div');
-      spinner.className = 'chart-spinner';
-      iframe.parentNode.appendChild(spinner);
+        var spinner = document.createElement('div');
+        spinner.className = 'chart-spinner';
+        iframe.parentNode.appendChild(spinner);
 
-      iframe.onload = function() { spinner.style.display = 'none'; };
-      iframe.onerror = function() {
-        spinner.style.display = 'none';
-        var container = iframe.closest('.chart-wide') || iframe.closest('.chart-frame');
-        if (container) {
-          container.classList.add('iframe-error');
-          var hint = container.querySelector('.chart-hint');
-          if (hint && !hint.textContent.includes('失败')) {
-            hint.textContent = '图表加载失败，建议刷新重试';
-            hint.style.color = '#e74c3c';
+        iframe.onload = function() { spinner.style.display = 'none'; };
+        iframe.onerror = function() {
+          spinner.style.display = 'none';
+          var container = iframe.closest('.chart-wide') || iframe.closest('.chart-frame');
+          if (container) {
+            container.classList.add('iframe-error');
+            var hint = container.querySelector('.chart-hint');
+            if (hint && !hint.textContent.includes('失败')) {
+              hint.textContent = '图表加载失败，建议刷新重试';
+              hint.style.color = '#e74c3c';
+            }
           }
-        }
-      };
+        };
 
-      setTimeout(function() {
-        try {
-          if (iframe.contentWindow && iframe.contentWindow.document &&
-              iframe.contentWindow.document.body && iframe.contentWindow.document.body.innerHTML !== '') {
-            spinner.style.display = 'none';
-          }
-        } catch(e) { /* cross-origin, ignore */ }
-      }, 8000);
+        setTimeout(function() {
+          try {
+            if (iframe.contentWindow && iframe.contentWindow.document &&
+                iframe.contentWindow.document.body && iframe.contentWindow.document.body.innerHTML !== '') {
+              spinner.style.display = 'none';
+            }
+          } catch(e) { /* cross-origin, ignore */ }
+        }, 8000);
 
-      iframeObserver.unobserve(iframe);
+        iframeObserver.unobserve(iframe);
+      });
+    }, {
+      rootMargin: '300px 0px',
+      threshold: 0.01
     });
-  }, {
-    rootMargin: '300px 0px',
-    threshold: 0.01
-  });
 
-  document.querySelectorAll('iframe[data-src]').forEach(function(iframe) {
-    iframeObserver.observe(iframe);
-  });
+    document.querySelectorAll('iframe[data-src]').forEach(function(iframe) {
+      iframeObserver.observe(iframe);
+    });
 
-  document.addEventListener('DOMContentLoaded', function() {
     var revealObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -868,9 +862,7 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
       el.classList.add('reveal');
       revealObserver.observe(el);
     });
-  });
 
-  (function() {
     var ticking = false;
     var navLinks = document.querySelectorAll('nav a');
 
@@ -899,8 +891,8 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
       }
     }, { passive: true });
 
-    window.addEventListener('load', updateNav);
-  })();
+    updateNav();
+  });
 
   window.onerror = function(message, source, lineno) {
     if (window.console && console.error) {
@@ -909,12 +901,14 @@ footer{text-align:center;padding:2rem 1.5rem;font-size:.82rem;color:#B3C5D7;bord
     return true;
   };
 
-  var switchBtn = document.getElementById('simple-switch-btn');
-  if (switchBtn) {
-    switchBtn.addEventListener('click', function() {
-      window.location.href = 'simple.html';
-    });
-  }
+  window.addEventListener('load', function() {
+    var switchBtn = document.getElementById('simple-switch-btn');
+    if (switchBtn) {
+      switchBtn.addEventListener('click', function() {
+        window.location.href = '/hpv-vaccine-data-news/simple.html';
+      });
+    }
+  });
 })();
 </script>
 
